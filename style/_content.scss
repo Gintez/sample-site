@@ -1,0 +1,95 @@
+main {
+  background-color: $grey-light1;
+  color: $grey-dark;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+.content-main {
+  @media (min-width: $desktop) {
+    max-width: 708px;
+  }
+}
+
+.content-title {
+  color: black;
+  font-family: 'Times New Roman';
+  font-weight: bold;
+}
+
+.content-title-main {
+  font-size: 30px;
+  line-height: 30px;
+  padding: 15px 0;
+  @media (min-width: $desktop) {
+    font-size: 37.49px;
+    line-height: 80.34px;
+  }
+}
+
+.content-title-secondary {
+  font-size: 20px;
+  line-height: 20px;
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+
+.content-main-block {
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 15px 30px 15px;
+  p {
+    padding-bottom: 15px;
+  }
+  @media (min-width: $desktop) {
+    margin-top: 40px;
+  }
+}
+
+.content-secondary-block {
+  background-color: white;
+  padding: 20px;
+  @media (min-width: $desktop) {
+    height: 164px;
+  }
+}
+
+.content-secondary-list {
+  margin-top: 20px;
+  a {
+    text-decoration: none;
+    color: $blue-link;
+    line-height: 30px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  hr {
+    margin: 0;
+  }
+  @media (min-width: $desktop) {
+      margin-top: 0;
+  }
+}
+
+.highlights-block {
+  background-color: $grey;
+  padding: 20px;
+  margin-top: 20px;
+  p {
+    padding: 10px 0;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1010px;
+    p {
+      padding: 0;
+    }
+  }
+}
+
+

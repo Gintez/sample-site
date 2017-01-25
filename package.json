@@ -1,0 +1,26 @@
+{
+  "name": "sample-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gintez/sample-site.git"
+  },
+  "author": "Gintez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gintez/sample-site/issues"
+  },
+  "homepage": "https://github.com/Gintez/sample-site#readme",
+  "dependencies": {
+    "css-loader": "^0.26.1",
+    "node-sass": "^4.3.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0"
+  }
+}

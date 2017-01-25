@@ -1,0 +1,52 @@
+.header {
+  background-color: $pink;
+  height: 50px;
+  @media (min-width: $desktop) {
+    height: 117px;
+  }
+}
+
+.header-menu {
+  display: none;
+  @media (min-width: $desktop) {
+    display: block;
+    font-weight: normal;
+    float: right;
+  }
+}
+
+
+.header-menu-secondary {
+  font-size: 14px;
+  margin-top: 24px;
+  a {
+    padding-left: 5px;
+    color: black;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.header-menu-main {
+  font-size: 20px;
+  margin-top: 40px;
+  a {
+    color: white;
+    padding-left: 10px;
+    &:hover {
+      color: $grey-black;
+    }
+  }
+}
+
+.header-title {
+  color: $pink-light;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  @media (min-width: $desktop) {
+    margin-top: 40px;
+    font-size: 59.63px;
+  }
+}
