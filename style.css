@@ -1,0 +1,596 @@
+/*
+  HTML5 Reset :: style.css
+  ----------------------------------------------------------
+  We have learned much from/been inspired by/taken code where offered from:
+  Eric Meyer          :: http://meyerweb.com
+  HTML5 Doctor        :: http://html5doctor.com
+  and the HTML5 Boilerplate :: http://html5boilerplate.com
+-------------------------------------------------------------------------------*/
+/* Let's default this
+-------------------------------------------------------------------------------*/
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent; }
+
+main, article, aside, figure, footer, header, nav, section, details, summary {
+  display: block; }
+
+/* Handle box-sizing while better addressing child elements:
+   http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+/* Responsive images and other embedded objects */
+/* if you don't have full control over `img` tags (if you have to overcome attributes), consider adding height: auto */
+img,
+object,
+embed {
+  max-width: 100%; }
+
+/*
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+  In fact, it *will* cause problems with Google Maps' controls at small size.
+  If this is the case for you, try uncommenting the following:
+#map img {
+    max-width: none;
+}
+*/
+/* force a vertical scrollbar to prevent a jumpy page */
+html {
+  overflow-y: scroll; }
+
+/* we use a lot of ULs that aren't bulleted.
+  you'll have to restore the bullets within content,
+  which is fine because they're probably customized anyway */
+ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+th {
+  font-weight: bold;
+  vertical-align: bottom; }
+
+td {
+  font-weight: normal;
+  vertical-align: top; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+pre {
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word;
+  /* IE */ }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+select, input, textarea {
+  font: 99% sans-serif; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+small {
+  font-size: 85%; }
+
+strong {
+  font-weight: bold; }
+
+td, td img {
+  vertical-align: top; }
+
+/* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {
+  margin: 0; }
+
+/* make buttons play nice in IE */
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible; }
+
+/* scale images in IE7 more attractively */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* prevent BG image flicker upon hover
+   (commented out as usage is rare, and the filter syntax messes with some pre-processors)
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+*/
+/* let's clear some floats */
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1030px; } }
+
+.row:before, .row:after, .container-fluid:before, .container-fluid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.row {
+  margin-left: -10px;
+  margin-right: -10px; }
+
+.col {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.col-xs-12 {
+  width: 100%; }
+
+.col-xs-11 {
+  width: 91.66666667%; }
+
+.col-xs-10 {
+  width: 83.33333333%; }
+
+.col-xs-9 {
+  width: 75%; }
+
+.col-xs-8 {
+  width: 66.66666667%; }
+
+.col-xs-7 {
+  width: 58.33333333%; }
+
+.col-xs-6 {
+  width: 50%; }
+
+.col-xs-5 {
+  width: 41.66666667%; }
+
+.col-xs-4 {
+  width: 33.33333333%; }
+
+.col-xs-3 {
+  width: 25%; }
+
+.col-xs-2 {
+  width: 16.66666667%; }
+
+.col-xs-1 {
+  width: 8.33333333%; }
+
+@media (min-width: 740px) {
+  .col-md-12 {
+    width: 100%; }
+  .col-md-11 {
+    width: 91.66666667%; }
+  .col-md-10 {
+    width: 83.33333333%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-8 {
+    width: 66.66666667%; }
+  .col-md-7 {
+    width: 58.33333333%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-5 {
+    width: 41.66666667%; }
+  .col-md-4 {
+    width: 33.33333333%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-2 {
+    width: 16.66666667%; }
+  .col-md-1 {
+    width: 8.33333333%; } }
+
+@media (min-width: 1200px) {
+  .col-lg-12 {
+    width: 100%; }
+  .col-lg-11 {
+    width: 91.66666667%; }
+  .col-lg-10 {
+    width: 83.33333333%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-8 {
+    width: 66.66666667%; }
+  .col-lg-7 {
+    width: 58.33333333%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-5 {
+    width: 41.66666667%; }
+  .col-lg-4 {
+    width: 33.33333333%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-2 {
+    width: 16.66666667%; }
+  .col-lg-1 {
+    width: 8.33333333%; } }
+
+.header {
+  background-color: #d3135a;
+  height: 50px; }
+  @media (min-width: 1200px) {
+    .header {
+      height: 117px; } }
+
+.header-title {
+  color: #ffc2dd;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px; }
+  @media (min-width: 1200px) {
+    .header-title {
+      margin-top: 40px;
+      font-size: 59.63px; } }
+
+.header-menu-wrapper {
+  background-color: #4d4d4d; }
+  @media (min-width: 1200px) {
+    .header-menu-wrapper {
+      background-color: transparent; } }
+
+.header-menu {
+  font-weight: normal;
+  float: left;
+  display: block;
+  line-height: 30px;
+  width: 100%; }
+  .header-menu li {
+    display: block; }
+    .header-menu li:hover {
+      background-color: #666666; }
+  .header-menu a {
+    text-decoration: none; }
+  @media (min-width: 1200px) {
+    .header-menu {
+      width: auto;
+      display: inline;
+      line-height: auto;
+      float: right; }
+      .header-menu li {
+        display: inline; }
+        .header-menu li:hover {
+          background-color: transparent; } }
+
+.header-menu-main {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 10px; }
+  .header-menu-main a {
+    color: white;
+    padding: 10px; }
+    .header-menu-main a:hover {
+      opacity: 0.7; }
+  @media (min-width: 1200px) {
+    .header-menu-main {
+      margin-bottom: 0px;
+      margin-top: 20px;
+      font-size: 20px; }
+      .header-menu-main a {
+        padding: 5px; }
+        .header-menu-main a:hover {
+          color: #333333;
+          opacity: 1; } }
+
+.last {
+  padding-right: 0px !important; }
+
+@media (min-width: 1200px) {
+  .dropdown-menu {
+    position: relative; }
+    .dropdown-menu:hover .dropdown-content {
+      display: block; }
+    .dropdown-menu:hover li:first-child a:after {
+      content: '';
+      position: absolute;
+      left: 65px;
+      top: -8px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 8px solid #4d4d4d; }
+    .dropdown-menu ul {
+      left: 50%;
+      transform: translateX(-50%); } }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4d4d4d;
+  min-width: 150px;
+  margin-top: 10px;
+  z-index: 1; }
+  .dropdown-content a {
+    color: white;
+    font-size: 12px;
+    line-height: 28px;
+    text-decoration: none;
+    display: block; }
+    .dropdown-content a:hover {
+      background-color: #666666;
+      color: white !important; }
+
+.header-menu-secondary {
+  font-size: 14px;
+  margin-top: 10px; }
+  .header-menu-secondary a {
+    padding: 10px;
+    color: white; }
+    .header-menu-secondary a:hover {
+      opacity: 0.7; }
+  @media (min-width: 1200px) {
+    .header-menu-secondary {
+      margin-top: 24px; }
+      .header-menu-secondary a {
+        padding: 0 0 0 5px;
+        color: black; } }
+
+.header-menu-icon {
+  display: block;
+  float: right;
+  margin-top: 5px;
+  position: relative; }
+  @media (min-width: 1200px) {
+    .header-menu-icon {
+      display: none; } }
+
+@media (max-width: 1199px) {
+  .hidden {
+    display: none !important; } }
+
+main {
+  background-color: #e6e6e6;
+  color: #4d4d4d;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  padding-bottom: 20px; }
+
+@media (min-width: 1200px) {
+  .content-main {
+    max-width: 708px; } }
+
+.content-title {
+  color: black;
+  font-family: 'Times New Roman';
+  font-weight: bold; }
+
+.content-title-main {
+  font-size: 30px;
+  line-height: 30px;
+  padding: 15px 0; }
+  @media (min-width: 1200px) {
+    .content-title-main {
+      font-size: 37.49px;
+      line-height: 80.34px; } }
+
+.content-title-secondary {
+  font-size: 20px;
+  line-height: 20px; }
+  @media (min-width: 1200px) {
+    .content-title-secondary {
+      font-size: 24px;
+      line-height: 27px; } }
+
+.content-main-block {
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 15px 30px 15px; }
+  .content-main-block p {
+    padding-bottom: 15px; }
+  @media (min-width: 1200px) {
+    .content-main-block {
+      margin-top: 40px; } }
+
+.content-secondary-block {
+  background-color: white;
+  padding: 20px; }
+  @media (min-width: 1200px) {
+    .content-secondary-block {
+      height: 164px; } }
+
+.content-secondary-list {
+  margin-top: 20px; }
+  .content-secondary-list a {
+    text-decoration: none;
+    color: #0071bc;
+    line-height: 30px; }
+    .content-secondary-list a:hover {
+      opacity: 0.8; }
+  .content-secondary-list hr {
+    margin: 0; }
+  @media (min-width: 1200px) {
+    .content-secondary-list {
+      margin-top: 0; } }
+
+.highlights-block {
+  background-color: #cccccc;
+  padding: 20px;
+  margin-top: 20px; }
+  .highlights-block p {
+    padding: 10px 0; }
+  @media (min-width: 1200px) {
+    .highlights-block {
+      max-width: 1010px; }
+      .highlights-block p {
+        padding: 0; } }
+
+.msg-form-wrapper {
+  margin-top: 20px; }
+  @media (min-width: 1200px) {
+    .msg-form-wrapper {
+      margin-top: 40px;
+      min-width: 283px; } }
+
+.msg-form-breakline {
+  border-top: 3px solid #4d4d4d; }
+  @media (min-width: 1200px) {
+    .msg-form-breakline {
+      width: 283px; } }
+
+.msg-form {
+  border: 1px solid #898989;
+  padding: 20px;
+  margin-top: 30px; }
+  .msg-form label {
+    color: #010101; }
+  .msg-form input, .msg-form textarea {
+    width: 100%;
+    height: 31px;
+    border: 1px solid #898989;
+    padding: 10px;
+    margin: 5px 0 20px 0; }
+  .msg-form textarea {
+    height: 131px;
+    resize: none; }
+
+.msg-form-button {
+  background-color: #d3135a;
+  width: 100%;
+  height: 36px;
+  border: 0px;
+  color: #fefefe; }
+  .msg-form-button:hover {
+    opacity: 0.9; }
+  @media (min-width: 1200px) {
+    .msg-form-button {
+      width: 110px; } }
+
+.main-footer {
+  background-color: #666666;
+  padding: 20px; }
+  .main-footer p {
+    color: #b3b3b3;
+    font-size: 12px;
+    padding: 20px 0; }
+    @media (min-width: 1200px) {
+      .main-footer p {
+        min-width: 879px; } }
+  .main-footer h1 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px; }
+    @media (min-width: 1200px) {
+      .main-footer h1 {
+        font-size: 31.15px;
+        margin-top: 70px;
+        text-align: right;
+        margin-bottom: 0; } }
+  @media (min-width: 1200px) {
+    .main-footer {
+      padding: 0px; } }
+
+.footer-menu {
+  color: white;
+  margin-top: 20px; }
+  .footer-menu a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none; }
+    .footer-menu a:hover {
+      opacity: 0.7; }
+  .footer-menu li {
+    display: inline; }
+
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif; }

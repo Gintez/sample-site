@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Gintez/sample-site#readme",
   "dependencies": {
     "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "node-sass": "^4.3.0",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",

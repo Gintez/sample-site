@@ -5,29 +5,58 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Sample Site</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="row">
-        <h1 class="col col-lg-6 header-title">The Site</h1>
-        <div class="col col-lg-6">
-          <nav class="header-menu header-menu-secondary">
-            <ul>
-              <li><a href="#">menu link</a></li>
-              <li><a href="#">menu link</a></li>
-              <li><a href="#">menu link</a></li>
-            </ul>
-          </nav>
-          <nav class="header-menu header-menu-main">
-            <ul>
-              <li><a href="#">menu link</a></li>
-              <li><a href="#">menu link</a></li>
-              <li><a href="#">menu link</a></li>
-              <li><a href="#">menu link</a></li>
-            </ul>
-          </nav>
+        <h1 class="col col-xs-10 col-lg-6 header-title">The Site</h1>
+        <div id="menu-icon" class="col col-xs-2">
+          <a href="#" class="header-menu-icon" ">
+            <img src="./images/menu.png" alt="menu" height="42" width="42">
+          </a>
         </div>
+<!--           <a id="menu-icon" href="#" class="header-menu-icon">
+            <img src="./images/menu.png" alt="menu" height="42" width="42">
+          </a> -->
+        <div id="nav-bar" class="hidden">
+          <div class="col col-xs-12 col-lg-6 header-menu-wrapper">
+            <nav class="header-menu header-menu-secondary">
+              <ul>
+                <li><a href="#">menu link</a></li>
+                <li><a href="#">menu link</a></li>
+                <li><a href="#">menu link</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col col-xs-12 col-lg-6 header-menu-wrapper">
+            <nav>
+              <ul class="header-menu header-menu-main">
+                <li class="dropdown-menu"><a href="#">menu link</a>
+                  <ul class="dropdown-content">
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-menu"><a href="#">menu link</a>
+                  <ul class="dropdown-content">
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">menu link</a></li>
+                <li><a class="last" href="#">menu link</a></li>
+              </ul>
+            </nav>
+            </div>
+          </div>
       </div>
     </div>
   </header>
@@ -131,5 +160,6 @@
     </div>
   </footer>
   <script src="./bundle.js"></script>
+
 </body>
 </html>

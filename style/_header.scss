@@ -6,40 +6,6 @@
   }
 }
 
-.header-menu {
-  display: none;
-  @media (min-width: $desktop) {
-    display: block;
-    font-weight: normal;
-    float: right;
-  }
-}
-
-
-.header-menu-secondary {
-  font-size: 14px;
-  margin-top: 24px;
-  a {
-    padding-left: 5px;
-    color: black;
-    &:hover {
-      opacity: 0.7;
-    }
-  }
-}
-
-.header-menu-main {
-  font-size: 20px;
-  margin-top: 40px;
-  a {
-    color: white;
-    padding-left: 10px;
-    &:hover {
-      color: $grey-black;
-    }
-  }
-}
-
 .header-title {
   color: $pink-light;
   font-size: 30px;
@@ -48,5 +14,153 @@
   @media (min-width: $desktop) {
     margin-top: 40px;
     font-size: 59.63px;
+  }
+}
+
+.header-menu-wrapper {
+  background-color: $grey-dark;
+  @media (min-width: $desktop) {
+    background-color: transparent;
+  }
+}
+
+.header-menu {
+  font-weight: normal;
+  float: left;
+  display: block;
+  line-height: 30px;
+  width: 100%;
+  li {
+    display: block;
+    &:hover {
+      background-color: $grey-darker;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  @media (min-width: $desktop) {
+    width: auto;
+    display: inline;
+    line-height: auto;
+    float: right;
+    li {
+      display: inline;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.header-menu-main {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  a {
+    color: white;
+    padding: 10px;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 20px;
+     a {
+      padding: 5px;
+      &:hover {
+        color: $grey-black;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.last {
+  padding-right: 0px !important;
+}
+
+
+.dropdown-menu {
+  @media (min-width: $desktop) {
+    position: relative;
+    &:hover{
+      .dropdown-content {
+        display: block;
+      }
+      li:first-child a:after {
+        content: '';
+        position: absolute;
+        left: 65px;
+        top: -8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 8px solid $grey-dark;
+      }
+    }
+    ul {
+      left:50%;
+      transform:translateX(-50%);
+    }
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: $grey-dark;
+  min-width: 150px;
+  margin-top: 10px;
+  z-index: 1;
+  a {
+    color: white;
+    font-size: 12px;
+    line-height: 28px;
+    text-decoration: none;
+    display: block;
+    &:hover {
+      background-color: $grey-darker;
+      color: white !important;
+    }
+  }
+
+}
+
+.header-menu-secondary {
+  font-size: 14px;
+  margin-top: 10px;
+  a {
+    padding: 10px;
+    color: white;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  @media (min-width: $desktop) {
+    margin-top: 24px;
+    a {
+      padding: 0 0 0 5px;
+      color: black;
+    }
+  }
+}
+
+.header-menu-icon {
+  display: block;
+  float: right;
+  margin-top: 5px;
+  position: relative;
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.hidden {
+  @media (max-width: 1199px){
+    display: none !important;
   }
 }
