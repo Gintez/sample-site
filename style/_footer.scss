@@ -1,9 +1,13 @@
-
 .main-footer {
   background-color: $grey-darker;
   padding: 20px;
+  width:100%;
+  position:absolute;
+  left:0;
+
   p {
     color: $grey-light2;
+    line-height: auto;
     font-size: 12px;
     padding: 20px 0;
     @media (min-width: $desktop) {
@@ -13,16 +17,17 @@
   h1 {
     color: white;
     font-size: 20px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     @media (min-width: $desktop) {
       font-size: 31.15px;
-      margin-top: 70px;
+      padding-top: 30px;
       text-align: right;
       margin-bottom: 0;
     }
   }
   @media (min-width: $desktop) {
     padding: 0px;
+    background-color: $grey-darker;
   }
 }
 

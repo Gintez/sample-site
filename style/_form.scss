@@ -22,10 +22,8 @@
   }
   input, textarea {
     width: 100%;
-    height: 31px;
     border: 1px solid $grey-light3;
     padding: 10px;
-    margin: 5px 0 20px 0;
   }
   textarea {
     height: 131px;
@@ -33,8 +31,13 @@
   }
 }
 
+.inputWrapper {
+  padding-bottom: 10px;
+}
+
 .msg-form-button {
   background-color: $pink;
+  margin-top: 5px;
   width: 100%;
   height: 36px;
   border: 0px;
@@ -45,4 +48,15 @@
   @media (min-width: $desktop) {
     width: 110px;
   }
+}
+
+#errorName, #errorLastName {
+  color: $pink;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+#errorMsg {
+  color: $pink;
+  font-weight: bold;
 }

@@ -1,12 +1,13 @@
 @import 'reset';
 @import 'variables';
 @import 'layouts';
+@import 'footer';
 @import 'header';
 @import 'content';
 @import 'form';
-@import 'footer';
+
 
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background-color: $grey-light1;
 }
-
