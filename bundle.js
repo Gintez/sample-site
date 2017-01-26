@@ -51,7 +51,7 @@
 
 	function toggleMenu() {
 	  var currentClass = document.getElementById('nav-bar').classList;
-	  if(currentClass.contains('hidden')){
+	  if(currentClass.contains('hidden')) {
 	    currentClass.remove('hidden');
 	  } else {
 	    currentClass.add('hidden');

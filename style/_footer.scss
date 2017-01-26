@@ -1,9 +1,9 @@
 .main-footer {
   background-color: $grey-darker;
   padding: 20px;
-  width:100%;
-  position:absolute;
-  left:0;
+  width: 100%;
+  position: absolute;
+  left: 0;
 
   p {
     color: $grey-light2;
@@ -11,13 +11,12 @@
     font-size: 12px;
     padding: 20px 0;
     @media (min-width: $desktop) {
-      min-width: 879px;
+      min-width: 875px;
     }
   }
   h1 {
     color: white;
     font-size: 20px;
-    // margin-bottom: 20px;
     @media (min-width: $desktop) {
       font-size: 31.15px;
       padding-top: 30px;

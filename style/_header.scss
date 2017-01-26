@@ -12,8 +12,8 @@
   font-weight: bold;
   margin-top: 10px;
   @media (min-width: $desktop) {
-    margin-top: 40px;
     font-size: 59.63px;
+    margin-top: 40px;
   }
 }
 
@@ -25,13 +25,13 @@
 }
 
 .header-menu {
-  font-weight: normal;
   float: left;
   display: block;
   line-height: 30px;
   width: 100%;
   li {
     display: block;
+    border-bottom: 1px solid $grey-darker;
     &:hover {
       background-color: $grey-darker;
     }
@@ -40,12 +40,13 @@
     text-decoration: none;
   }
   @media (min-width: $desktop) {
-    width: auto;
+    float: right;
     display: inline;
     line-height: auto;
-    float: right;
+    width: auto;
     li {
       display: inline;
+      border-bottom: 0px;
       &:hover {
         background-color: transparent;
       }
@@ -59,17 +60,15 @@
   margin-bottom: 10px;
   a {
     color: white;
-    padding: 10px;
     &:hover {
       opacity: 0.7;
     }
   }
   @media (min-width: $desktop) {
-    margin-bottom: 0px;
-    margin-top: 20px;
     font-size: 20px;
-     a {
-      padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    a {
       &:hover {
         color: $grey-black;
         opacity: 1;
@@ -78,17 +77,13 @@
   }
 }
 
-.last {
-  padding-right: 0px !important;
-}
-
-
 .dropdown-menu {
+  padding-left: 10px;
+  position: relative;
   @media (min-width: $desktop) {
-    position: relative;
-    &:hover{
+    &:hover {
       .dropdown-content {
-        display: block;
+        opacity: 1;
       }
       li:first-child a:after {
         content: '';
@@ -103,31 +98,39 @@
       }
     }
     ul {
-      left:50%;
-      transform:translateX(-50%);
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: $grey-dark;
+  opacity: 1;
+  position: relative;
+  background-color: $grey-light3;
   min-width: 150px;
-  margin-top: 10px;
-  z-index: 1;
   a {
+    padding-left: 10px;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 28px;
     text-decoration: none;
     display: block;
     &:hover {
       background-color: $grey-darker;
-      color: white !important;
+      color: white;
     }
   }
-
+  @media (min-width: $desktop) {
+    background-color: $grey-dark;
+    z-index: 250;
+    margin-top: 10px;
+    opacity: 0;
+    position: absolute;
+    a {
+      font-size: 12px;
+    }
+  }
 }
 
 .header-menu-secondary {
@@ -160,7 +163,7 @@
 }
 
 .hidden {
-  @media (max-width: 1199px){
-    display: none !important;
+  @media (max-width: 1199px) {
+    display: none;
   }
 }

@@ -194,13 +194,13 @@ input[type=button] {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px; }
+  padding-left: 20px;
+  padding-right: 20px; }
   @media (min-width: 1200px) {
     .container {
       width: 1030px; } }
 
-.row:before, .row:after, .container-fluid:before, .container-fluid:after {
+.row:before, .row:after {
   content: "";
   display: table;
   clear: both; }
@@ -317,7 +317,7 @@ input[type=button] {
     padding: 20px 0; }
     @media (min-width: 1200px) {
       .main-footer p {
-        min-width: 879px; } }
+        min-width: 875px; } }
   .main-footer h1 {
     color: white;
     font-size: 20px; }
@@ -358,8 +358,8 @@ input[type=button] {
   margin-top: 10px; }
   @media (min-width: 1200px) {
     .header-title {
-      margin-top: 40px;
-      font-size: 59.63px; } }
+      font-size: 59.63px;
+      margin-top: 40px; } }
 
 .header-menu-wrapper {
   background-color: #4d4d4d; }
@@ -368,25 +368,26 @@ input[type=button] {
       background-color: transparent; } }
 
 .header-menu {
-  font-weight: normal;
   float: left;
   display: block;
   line-height: 30px;
   width: 100%; }
   .header-menu li {
-    display: block; }
+    display: block;
+    border-bottom: 1px solid #666666; }
     .header-menu li:hover {
       background-color: #666666; }
   .header-menu a {
     text-decoration: none; }
   @media (min-width: 1200px) {
     .header-menu {
-      width: auto;
+      float: right;
       display: inline;
       line-height: auto;
-      float: right; }
+      width: auto; }
       .header-menu li {
-        display: inline; }
+        display: inline;
+        border-bottom: 0px; }
         .header-menu li:hover {
           background-color: transparent; } }
 
@@ -395,29 +396,24 @@ input[type=button] {
   margin-top: 0px;
   margin-bottom: 10px; }
   .header-menu-main a {
-    color: white;
-    padding: 10px; }
+    color: white; }
     .header-menu-main a:hover {
       opacity: 0.7; }
   @media (min-width: 1200px) {
     .header-menu-main {
-      margin-bottom: 0px;
+      font-size: 20px;
       margin-top: 20px;
-      font-size: 20px; }
-      .header-menu-main a {
-        padding: 5px; }
-        .header-menu-main a:hover {
-          color: #333333;
-          opacity: 1; } }
+      margin-bottom: 0px; }
+      .header-menu-main a:hover {
+        color: #333333;
+        opacity: 1; } }
 
-.last {
-  padding-right: 0px !important; }
-
-@media (min-width: 1200px) {
-  .dropdown-menu {
-    position: relative; }
+.dropdown-menu {
+  padding-left: 10px;
+  position: relative; }
+  @media (min-width: 1200px) {
     .dropdown-menu:hover .dropdown-content {
-      display: block; }
+      opacity: 1; }
     .dropdown-menu:hover li:first-child a:after {
       content: '';
       position: absolute;
@@ -433,21 +429,29 @@ input[type=button] {
       transform: translateX(-50%); } }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #4d4d4d;
-  min-width: 150px;
-  margin-top: 10px;
-  z-index: 1; }
+  opacity: 1;
+  position: relative;
+  background-color: #898989;
+  min-width: 150px; }
   .dropdown-content a {
+    padding-left: 10px;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 28px;
     text-decoration: none;
     display: block; }
     .dropdown-content a:hover {
       background-color: #666666;
-      color: white !important; }
+      color: white; }
+  @media (min-width: 1200px) {
+    .dropdown-content {
+      background-color: #4d4d4d;
+      z-index: 250;
+      margin-top: 10px;
+      opacity: 0;
+      position: absolute; }
+      .dropdown-content a {
+        font-size: 12px; } }
 
 .header-menu-secondary {
   font-size: 14px;
@@ -475,7 +479,7 @@ input[type=button] {
 
 @media (max-width: 1199px) {
   .hidden {
-    display: none !important; } }
+    display: none; } }
 
 .main-content {
   color: #4d4d4d;
@@ -498,6 +502,7 @@ input[type=button] {
   padding: 15px 0; }
   @media (min-width: 1200px) {
     .content-title-main {
+      padding: 0;
       font-size: 37.49px;
       line-height: 80.34px; } }
 
@@ -523,6 +528,8 @@ input[type=button] {
 .content-secondary-block {
   background-color: white;
   padding: 20px; }
+  .content-secondary-block ul {
+    padding-top: 10px; }
   @media (min-width: 1200px) {
     .content-secondary-block {
       height: 164px; } }
@@ -590,7 +597,7 @@ input[type=button] {
   width: 100%;
   height: 36px;
   border: 0px;
-  color: #fefefe; }
+  color: white; }
   .msg-form-button:hover {
     opacity: 0.9; }
   @media (min-width: 1200px) {
