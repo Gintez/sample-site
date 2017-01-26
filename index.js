@@ -26,27 +26,22 @@ function validateForm(e) {
   var userMessageError = document.getElementById('errorMsg');
   var errors = 0;
 
+  nameError.innerHTML = '';
+  lastNameError.innerHTML = '';
+  userMessageError.innerHTML = '';
+
   if(name == '') {
-    errors ++;
+    errors++;
     nameError.innerHTML = 'Please specify your name.';
-  } else {
-    nameError.innerHTML = '';
   }
-
   if(lastName == '') {
-    errors ++;
+    errors++;
     lastNameError.innerHTML = 'Please specify your last name.';
-  } else {
-    lastNameError.innerHTML = '';
   }
-
   if(userMessage == '') {
-    errors ++;
+    errors++;
     userMessageError.innerHTML = 'Please enter your message.';
-  } else {
-    userMessageError.innerHTML = '';
   }
-
   if(errors != 0) {
     e.preventDefault();
   }
