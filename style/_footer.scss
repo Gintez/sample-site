@@ -4,44 +4,53 @@
   width: 100%;
   position: absolute;
   left: 0;
-
-  p {
-    color: $grey-light2;
-    line-height: auto;
-    font-size: 12px;
-    padding: 20px 0;
-    @media (min-width: $desktop) {
-      min-width: 875px;
-    }
-  }
-  h1 {
-    color: white;
-    font-size: 20px;
-    @media (min-width: $desktop) {
-      font-size: 31.15px;
-      padding-top: 30px;
-      text-align: right;
-      margin-bottom: 0;
-    }
-  }
   @media (min-width: $desktop) {
     padding: 0px;
     background-color: $grey-darker;
   }
 }
 
-.footer-menu {
+.main-footer-title {
   color: white;
+  font-size: 20px;
+  @media (min-width: $desktop) {
+    font-size: 31.15px;
+    padding-top: 30px;
+    text-align: right;
+    margin-bottom: 0;
+  }
+}
+
+.main-footer-text {
+  color: $grey-light2;
+  line-height: auto;
+  font-size: 12px;
+  padding: 20px 0;
+  @media (min-width: $desktop) {
+    min-width: 875px;
+  }
+}
+
+.footer-menu-wrapper {
   margin-top: 20px;
-  a {
-    color: white;
-    font-size: 12px;
-    text-decoration: none;
-    &:hover {
-      opacity: 0.7;
-    }
+}
+
+.footer-menu-item {
+  display: inline;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-menu-text {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.7;
   }
-  li {
-    display: inline;
-  }
+}
+
+.footer-menu-item:not(:first-child):before {
+  content: " | ";
 }
