@@ -1,11 +1,11 @@
-.main-content {
+.content-wrapper {
   color: $grey-dark;
   font-size: 14px;
   line-height: 20px;
   font-weight: normal;
 }
 
-.content-main {
+.content-main-wrapper {
   @media (min-width: $desktop) {
     max-width: 708px;
   }
@@ -17,7 +17,7 @@
   font-weight: bold;
 }
 
-.content-title-main {
+.content-main-title {
   font-size: 30px;
   line-height: 30px;
   padding: 15px 0;
@@ -28,7 +28,7 @@
   }
 }
 
-.content-title-secondary {
+.content-secondary-title {
   font-size: 20px;
   line-height: 20px;
   @media (min-width: $desktop) {
@@ -42,35 +42,25 @@
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 0 15px 30px 15px;
-  p {
-    padding-bottom: 15px;
-  }
   @media (min-width: $desktop) {
     margin-top: 40px;
   }
 }
 
+.content-main-text {
+  padding-bottom: 15px;
+}
+
 .content-secondary-block {
   background-color: white;
   padding: 20px;
-  ul {
-    padding-top: 10px;
-  }
   @media (min-width: $desktop) {
     height: 164px;
   }
 }
 
-.content-secondary-list {
+.content-secondary-list-wrapper {
   margin-top: 20px;
-  a {
-    text-decoration: none;
-    color: $blue-link;
-    line-height: 30px;
-    &:hover {
-      opacity: 0.8;
-    }
-  }
   hr {
     margin: 0;
   }
@@ -79,19 +69,33 @@
   }
 }
 
+.content-secondary-list {
+  padding-top: 10px;
+}
+
+.content-secondary-list-text {
+  text-decoration: none;
+  color: $blue-link;
+  line-height: 30px;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .highlights-block {
   background-color: $grey;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  p {
-    padding: 10px 0;
-  }
   @media (min-width: $desktop) {
     max-width: 1010px;
-    p {
-      padding: 0;
-    }
+  }
+}
+
+.highlights-text {
+  padding: 10px 0;
+  @media (min-width: $desktop) {
+    padding: 0;
   }
 }
 

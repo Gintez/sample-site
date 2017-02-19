@@ -13,12 +13,12 @@
       <div class="row">
         <h1 class="col col-xs-10 col-lg-6 header-title">The Site</h1>
         <div id="menu-icon" class="col col-xs-2">
-          <a href="#" class="mobile-header-menu-icon"> &#9776; </a>
+          <a href="#" class="header-menu-icon"> &#9776; </a>
         </div>
         <div id="nav-bar" class="hidden-for-mobile">
           <div class="col col-xs-12 col-lg-6 header-menu-wrapper">
-            <nav class="header-menu header-menu-secondary">
-              <ul>
+            <nav>
+              <ul class="header-menu header-menu-secondary">
                 <li class="header-menu-item"><a class="menu-text menu-secondary-text" href="#">menu link</a></li>
                 <li class="header-menu-item"><a class="menu-text menu-secondary-text" href="#">menu link</a></li>
                 <li class="header-menu-item"><a class="menu-text menu-secondary-text" href="#">menu link</a></li>
@@ -28,7 +28,7 @@
           <div class="col col-xs-12 col-lg-6 header-menu-wrapper">
             <nav>
               <ul class="header-menu header-menu-main">
-                <li class="dropdown-menu header-menu-item"><a class="menu-text header-main-menu-text" href="#">menu link</a>
+                <li class="header-menu-item dropdown-menu"><a class="menu-text header-main-menu-text" href="#">menu link</a>
                   <ul class="dropdown-content">
                     <li class="header-menu-item"><a class="menu-text dropdown-menu-text" href="#">menu link</a></li>
                     <li class="header-menu-item"><a class="menu-text dropdown-menu-text" href="#">menu link</a></li>
@@ -48,51 +48,51 @@
     </div>
   </header>
   <main>
-    <div class="main-content">
+    <div class="content-wrapper">
       <div class="container">
         <div class="row">
-          <article class="content-main col col-xs-12 col-md-7 col-lg-9">
+          <section class="content-main-wrapper col col-xs-12 col-md-7 col-lg-9">
             <div class="content-main-block">
-              <h1 class="content-title content-title-main">Aenean ac diam nec neque fringilla</h1>
-              <p> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
-              <p> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
-              <p> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
-              <p> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
-              <p> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
+              <h1 class="content-title content-main-title">Aenean ac diam nec neque fringilla</h1>
+              <p class="content-main-text"> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
+              <p class="content-main-text"> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
+              <p class="content-main-text"> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
+              <p class="content-main-text"> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
+              <p class="content-main-text"> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
             </div>
             <div class="row">
               <div class="col col-xs-12 col-md-12 col-lg-6">
                 <aside class="content-secondary-block">Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. Dorce pila meracone.</aside>
               </div>
-              <section class="col col-xs-12 col-md-12 col-lg-6">
-                <div class="content-secondary-block content-secondary-list">
-                  <h1 class="content-title content-title-secondary">Aenean ac diam nec neque</h1>
-                  <ul>
-                    <li><a href="#">Integer eget mauris et urna</a><hr></li>
-                    <li><a href="#">Pulvinar consectetur hendrerit</a><hr></li>
-                    <li><a href="#">Oget mauris praesent</a></li>
+              <aside class="col col-xs-12 col-md-12 col-lg-6">
+                <div class="content-secondary-block content-secondary-list-wrapper">
+                  <h1 class="content-title content-secondary-title">Aenean ac diam nec neque</h1>
+                  <ul class="content-secondary-list">
+                    <li><a class="content-secondary-list-text" href="#">Integer eget mauris et urna</a><hr></li>
+                    <li><a class="content-secondary-list-text" href="#">Pulvinar consectetur hendrerit</a><hr></li>
+                    <li><a class="content-secondary-list-text" href="#">Oget mauris praesent</a></li>
                   </ul>
                 </div>
-              </section>
+              </aside>
             </div>
-          </article>
+          </section>
           <div class="col col-xs-12 col-md-5 col-lg-3">
             <section class="msg-form-wrapper">
-              <h1 class="content-title content-title-secondary">Aenean ac diam <br/> nec neque fringilla</h1>
+              <h1 class="content-title content-secondary-title">Aenean ac diam <br/> nec neque fringilla</h1>
               <hr class="msg-form-breakline">
               <p> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
               <form class="msg-form" id="msg-form">
-                <div class="inputWrapper" >
+                <div class="msg-form-input-wrapper" >
                   <label for="name">First name:</label><br>
                   <input type="text" id="name" name="user-name" placeholder="Enter your name"/>
                   <div id="errorName"></div>
                 </div>
-                <div class="inputWrapper">
+                <div class="msg-form-input-wrapper">
                   <label for="last-name">Last name:</label><br>
                   <input type="text" id="last-name" name="last-name" placeholder="Enter your last name"/>
                   <div id="errorLastName"></div>
                 </div>
-                <div class="inputWrapper">
+                <div class="msg-form-input-wrapper">
                   <label for="msg">Message:</label><br>
                   <textarea id="msg" name="user-message"></textarea>
                   <div id="errorMsg"></div>
@@ -106,19 +106,13 @@
           <div class="highlights-block">
             <div class="row">
               <div class="col col-xs-12 col-md-12 col-lg-4">
-                <article>
-                  <p> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
-                </article>
+                <p class="highlights-text"> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
               </div>
               <div class="col col-xs-12 col-md-12 col-lg-4">
-                <article>
-                  <p> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
-                </article>
+                <p class="highlights-text"> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
               </div>
               <div class="col col-xs-12 col-md-12 col-lg-4">
-                <article>
-                  <p> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
-                </article>
+                <p class="highlights-text"> Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis ligula at varius. </p>
               </div>
             </div>
           </div>

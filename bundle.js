@@ -47,6 +47,7 @@
 	__webpack_require__ (1);
 
 	document.addEventListener('DOMContentLoaded', function() {
+
 	  // MENU TOGGLE FOR TABLET AND MOBILE
 	  document.getElementById('menu-icon').addEventListener('click', toggleMenu);
 
